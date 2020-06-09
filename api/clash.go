@@ -74,7 +74,8 @@ type Clash struct {
 	// Experimental       map[string]interface{} 	`yaml:"experimental"`
 	Proxy             []map[string]interface{} `yaml:"Proxy"`
 	ProxyGroup        []map[string]interface{} `yaml:"Proxy Group"`
-	Rule              []string                 `yaml:"Rule"`
+	Rules              []string                 `yaml:"Rules"`
+	// YAML is case-insensitive
 	CFWByPass         []string                 `yaml:"cfw-bypass"`
 	CFWLatencyTimeout int                      `yaml:"cfw-latency-timeout"`
 }
